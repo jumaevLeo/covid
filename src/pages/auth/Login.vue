@@ -7,7 +7,7 @@
             <div class="login-form">
               <div class="sign-in-htm">
                 <div class="group">
-                  <label for="user" class="label">Username</label>
+                  <label for="user" class="label tese">Username</label>
                   <input
                     id="user"
                     name="phoneNumber"
