@@ -1,9 +1,9 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
-import Science from "@/pages/Science.vue";
+import Catalogs from "@/pages/Catalogs.vue";
 import Login from "@/pages/auth/Login";
-import Teacher from "../pages/Teacher";
+import Orders from "../pages/Orders";
 import Pupil from "../pages/Pupil";
 import Payment from "../pages/Payment";
 import Rating from "../pages/Rating";
@@ -20,14 +20,14 @@ const routes = [
         component: Dashboard
       },
       {
-        path: "science",
-        name: "Science",
-        component: Science
+        path: "catalogs",
+        name: "Catalogs",
+        component: Catalogs
       },
       {
-        path: "teacher",
-        name: "Teacher",
-        component: Teacher
+        path: "orders",
+        name: "Orders",
+        component: Orders
       },
       {
         path: "pupil",

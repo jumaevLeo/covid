@@ -1,8 +1,10 @@
 <template>
-  <md-toolbar md-elevation="0" class="md-transparent">
+  <md-toolbar md-elevation="0" class="md-transparent" style="background-color: #fff !important;">
     <div class="md-toolbar-row">
       <div class="md-toolbar-section-start">
-        <h3 class="md-title">{{ $route.name }}</h3>
+        <h3 class="md-title" style="color: black !important; font-weight: bold !important;"><i>{{ $route.name }}</i></h3><br>
+        <h3 class="md-title"><i>/</i></h3>
+        <h3 class="md-title"><i style="color: #FF8306;">Natijalar</i></h3>
       </div>
       <div class="md-toolbar-section-end">
         <md-button
@@ -31,22 +33,22 @@
               <p class="hidden-lg hidden-md">Dashboard</p>
             </md-list-item>
 
-            <!-- <md-list-item href="#/notifications" class="dropdown">
-              <drop-down>
-                <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="material-icons">notifications</i>
-                  <span class="notification">5</span>
-                  <p class="hidden-lg hidden-md">Notifications</p>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li><a href="#">Mike John responded to your email</a></li>
-                  <li><a href="#">You have 5 new tasks</a></li>
-                  <li><a href="#">You're now friend with Andrew</a></li>
-                  <li><a href="#">Another Notification</a></li>
-                  <li><a href="#">Another One</a></li>
-                </ul>
-              </drop-down>
-            </md-list-item> -->
+<!--            <md-list-item href="#/notifications" class="dropdown">-->
+<!--              <drop-down>-->
+<!--                <a slot="title" class="dropdown-toggle" data-toggle="dropdown">-->
+<!--                  <i class="material-icons">notifications</i>-->
+<!--                  <span class="notification">5</span>-->
+<!--                  <p class="hidden-lg hidden-md">Notifications</p>-->
+<!--                </a>-->
+<!--                <ul class="dropdown-menu dropdown-menu-right">-->
+<!--                  <li><a href="#">Mike John responded to your email</a></li>-->
+<!--                  <li><a href="#">You have 5 new tasks</a></li>-->
+<!--                  <li><a href="#">You're now friend with Andrew</a></li>-->
+<!--                  <li><a href="#">Another Notification</a></li>-->
+<!--                  <li><a href="#">Another One</a></li>-->
+<!--                </ul>-->
+<!--              </drop-down>-->
+<!--            </md-list-item>-->
 
             <li class="md-list-item">
               <a

@@ -1,3 +1,4 @@
+
 <template>
   <div
     class="sidebar"
@@ -7,7 +8,7 @@
   >
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
-        <div class="logo-img">
+        <div class="logo-img" style="padding: 0 !important;">
           <img :src="imgLogo" alt="" />
         </div>
       </a>
@@ -17,7 +18,7 @@
         target="_blank"
         class="simple-text logo-normal"
       >
-        {{ title }}
+        <i style="font-family: Monaco">{{ title }}</i>
       </a>
     </div>
     <div class="sidebar-wrapper">
@@ -47,7 +48,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Vue MD"
+      default: "GRAND - PIZZA"
     },
     sidebarBackgroundImage: {
       type: String,
@@ -55,7 +56,7 @@ export default {
     },
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.png")
+      default: require("@/assets/img/pizza.png")
     },
     sidebarItemColor: {
       type: String,

@@ -11,13 +11,13 @@
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
       </sidebar-link>
-      <sidebar-link to="/science">
-        <md-icon>bubble_chart</md-icon>
-        <p>Fanlar</p>
+      <sidebar-link to="/orders">
+        <md-icon><b-icon icon="cash-stack" aria-hidden="true"></b-icon></md-icon>
+        <p>Buyurtmalar</p>
       </sidebar-link>
-      <sidebar-link to="/teacher">
-        <md-icon>people</md-icon>
-        <p>O'qituvchilar</p>
+      <sidebar-link to="/catalogs">
+        <md-icon><b-icon icon="basket" aria-hidden="true"></b-icon></md-icon>
+        <p>Kataloglar</p>
       </sidebar-link>
       <sidebar-link to="/pupil">
         <md-icon>people</md-icon>

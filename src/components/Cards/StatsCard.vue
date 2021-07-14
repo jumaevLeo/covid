@@ -1,7 +1,7 @@
 <template>
   <md-card class="md-card-stats">
-    <md-card-header :data-background-color="dataBackgroundColor">
-      <slot name="header"></slot>
+    <md-card-header style="margin-top: 20px;background-color: #fff !important;border-radius: 60%;">
+      <slot name="header" data-background-color="dataBackgroundColor"></slot>
     </md-card-header>
 
     <md-card-content>

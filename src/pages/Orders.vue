@@ -6,10 +6,10 @@
       >
         <md-card class="md-card-plain">
           <md-card-header data-background-color="green">
-            <h4 class="title">Fanlar</h4>
+            <h4 class="title">Buyurtmalar</h4>
           </md-card-header>
           <md-card-content>
-            <ordered-table></ordered-table>
+            <teacher-table></teacher-table>
           </md-card-content>
         </md-card>
       </div>
@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import { OrderedTable } from "@/components";
+import { TeacherTable } from "@/components";
 
 export default {
   components: {
-    OrderedTable
+    TeacherTable
   }
 };
 </script>

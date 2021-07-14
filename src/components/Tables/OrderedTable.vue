@@ -94,18 +94,18 @@ export default {
 
   methods: {
     getScience() {
-      axios.get("/science").then(res => {
+      axios.get("/catalogs").then(res => {
         this.science = res.data;
       });
     },
     saveScience(id) {
       if(id){
-        axios.put("/science/" + id, this.param).then(res => {
+        axios.put("/catalogs/" + id, this.param).then(res => {
             this.getScience();
         });
       } else {
         this.showDialog = false;
-        axios.post("/science/add", this.param).then(res => {
+        axios.post("/catalogs/add", this.param).then(res => {
           if (res.status === 200 || res.status === 201) {
             this.getScience();
           }
@@ -122,7 +122,7 @@ export default {
     },
     deleteScience(id) {
       let item = this.science.find(item => item.id === id);
-      axios.delete("/science/" + id).then(res => {
+      axios.delete("/catalogs/" + id).then(res => {
         if (res.status === 200 || res.status === 201) {
           this.show=false;
           this.getScience();

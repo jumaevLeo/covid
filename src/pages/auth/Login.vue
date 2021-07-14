@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="body" >
+  <b-container fluid class="body">
     <b-form-row>
       <b-col md="4" offset="4">
         <div class="login-wrap">
@@ -7,7 +7,7 @@
             <div class="login-form">
               <div class="sign-in-htm">
                 <div class="group">
-                  <label for="user" class="label test">Username</label>
+                  <label for="user" class="label">Username</label>
                   <input
                     id="user"
                     name="phoneNumber"

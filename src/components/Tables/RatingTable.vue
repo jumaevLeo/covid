@@ -212,12 +212,12 @@ export default {
 
   methods: {
     getScience() {
-      axios.get("/science").then(res => {
+      axios.get("/catalogs").then(res => {
         this.science = res.data;
       });
     },
     getTeacher(page, size) {
-      axios.get("/teacher?page=" + page + "&size=" + size).then(res => {
+      axios.get("/orders?page=" + page + "&size=" + size).then(res => {
         this.teachers = res.data.object
         this.searched = this.teachers;
         this.totalPages = res.data.totalPages;
@@ -226,13 +226,13 @@ export default {
     },
     saveTeacher(id) {
       if (id) {
-        axios.put("/teacher/" + id, this.param).then(res => {
+        axios.put("/orders/" + id, this.param).then(res => {
           this.getTeacher();
           this.showDialog = false;
         });
       } else {
         this.showDialog = false;
-        axios.post("/teacher/add", this.param).then(res => {
+        axios.post("/orders/add", this.param).then(res => {
           if (res.status === 200 || res.status === 201) {
             this.getTeacher();
           }
@@ -251,7 +251,7 @@ export default {
     },
     deleteTeacher(id) {
       let item = this.teachers.find(item => item.id === id);
-      axios.delete("/teacher/" + id).then(res => {
+      axios.delete("/orders/" + id).then(res => {
         if (res.status === 200 || res.status === 201) {
           this.show = false;
           this.getTeacher();
